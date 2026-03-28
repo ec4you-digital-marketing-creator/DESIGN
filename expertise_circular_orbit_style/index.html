@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#f9f9f9",
+              "on-tertiary": "#ffffff",
+              "on-background": "#1a1c1c",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed": "#000f5d",
+              "primary-fixed-dim": "#ffb4a8",
+              "inverse-surface": "#2f3131",
+              "inverse-on-surface": "#f1f1f1",
+              "on-primary-container": "#ffbeb4",
+              "on-tertiary-container": "#c4caff",
+              "secondary": "#a63a2c",
+              "tertiary-container": "#0038f7",
+              "primary": "#870000",
+              "tertiary-fixed": "#dee0ff",
+              "surface-variant": "#e2e2e2",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#ffb4a8",
+              "error": "#ba1a1a",
+              "on-surface-variant": "#5c403b",
+              "surface-container-high": "#e8e8e8",
+              "on-secondary-container": "#72140b",
+              "tertiary-fixed-dim": "#bbc3ff",
+              "surface-dim": "#dadada",
+              "on-secondary-fixed-variant": "#852217",
+              "primary-container": "#b30000",
+              "outline-variant": "#e6bdb7",
+              "on-primary-fixed-variant": "#930000",
+              "tertiary": "#0028bb",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary": "#ffffff",
+              "on-primary-fixed": "#410000",
+              "surface-bright": "#f9f9f9",
+              "secondary-fixed-dim": "#ffb4a8",
+              "primary-fixed": "#ffdad4",
+              "surface-container": "#eeeeee",
+              "on-tertiary-fixed-variant": "#002dcc",
+              "surface-container-low": "#f3f3f3",
+              "surface-tint": "#be0f07",
+              "secondary-container": "#ff7c69",
+              "on-surface": "#1a1c1c",
+              "on-secondary-fixed": "#410000",
+              "background": "#f9f9f9",
+              "outline": "#916f6a",
+              "on-error": "#ffffff",
+              "secondary-fixed": "#ffdad4"
+            },
+            fontFamily: {
+              "headline": ["Work Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .orbit-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1/1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .orbit-item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* Asymmetric Orbit Placement Logic */
+        .pos-1 { transform: translate(-50%, -50%) rotate(0deg) translate(320px) rotate(0deg); }
+        .pos-2 { transform: translate(-50%, -50%) rotate(45deg) translate(320px) rotate(-45deg); }
+        .pos-3 { transform: translate(-50%, -50%) rotate(90deg) translate(320px) rotate(-90deg); }
+        .pos-4 { transform: translate(-50%, -50%) rotate(135deg) translate(320px) rotate(-135deg); }
+        .pos-5 { transform: translate(-50%, -50%) rotate(180deg) translate(320px) rotate(-180deg); }
+        .pos-6 { transform: translate(-50%, -50%) rotate(225deg) translate(320px) rotate(-225deg); }
+        .pos-7 { transform: translate(-50%, -50%) rotate(270deg) translate(320px) rotate(-270deg); }
+        .pos-8 { transform: translate(-50%, -50%) rotate(315deg) translate(320px) rotate(-315deg); }
+
+        @media (max-width: 768px) {
+            .pos-1, .pos-2, .pos-3, .pos-4, .pos-5, .pos-6, .pos-7, .pos-8 {
+                position: relative;
+                transform: none;
+                top: auto;
+                left: auto;
+                margin-bottom: 1rem;
+            }
+            .orbit-container {
+                display: flex;
+                flex-direction: column;
+                aspect-ratio: auto;
+                height: auto;
+            }
+            .connecting-line { display: none; }
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-[1440px] mx-auto">
+<div class="text-xl font-black tracking-tighter text-zinc-900 dark:text-white font-headline">
+                MANUFACTURING AUTHORITY
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-bold tracking-tight text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Capabilities</a>
+<a class="font-headline font-bold tracking-tight text-red-700 dark:text-red-500 border-b-2 border-red-700 pb-1" href="#">Projects</a>
+<a class="font-headline font-bold tracking-tight text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Systems</a>
+<a class="font-headline font-bold tracking-tight text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Inventory</a>
+<a class="font-headline font-bold tracking-tight text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Global Ops</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 text-sm font-bold tracking-widest hover:bg-primary-container transition-all duration-200 uppercase">
+                REQUEST QUOTE
+            </button>
+</div>
+</nav>
+<main class="pt-24 pb-20 px-4 md:px-8">
+<!-- Section Header -->
+<div class="max-w-[1440px] mx-auto mb-16">
+<p class="font-label text-xs uppercase tracking-[0.3em] text-primary font-bold mb-4">Precision Pillars</p>
+<h1 class="font-headline text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none max-w-4xl">
+                OUR <span class="text-outline text-transparent" style="-webkit-text-stroke: 1px #870000;">EXPERTISE</span> HUB
+            </h1>
+</div>
+<!-- Orbit Content Area -->
+<section class="relative max-w-[1200px] mx-auto py-20 flex items-center justify-center overflow-hidden">
+<!-- Background Elements -->
+<div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+<div class="w-[640px] h-[640px] border-[1px] border-zinc-900 rounded-full connecting-line"></div>
+<div class="absolute w-[400px] h-[400px] border-[0.5px] border-dashed border-zinc-900 rounded-full connecting-line"></div>
+</div>
+<div class="orbit-container">
+<!-- Central Core -->
+<div class="orbit-item z-20">
+<div class="w-48 h-48 bg-zinc-900 flex flex-col items-center justify-center text-center p-6 shadow-2xl">
+<span class="material-symbols-outlined text-red-600 text-5xl mb-2" data-icon="settings_input_component">settings_input_component</span>
+<h2 class="text-white font-headline font-black text-xl tracking-tighter leading-tight uppercase">Core<br/>Precision</h2>
+<div class="w-8 h-1 bg-red-600 mt-4"></div>
+</div>
+</div>
+<!-- Orbiting Expertise Points -->
+<!-- 1. Advanced Robotics -->
+<div class="orbit-item pos-1 group">
+<div class="w-56 bg-surface-container-lowest p-5 border-l-4 border-primary shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="font-label text-[10px] font-bold text-zinc-400">01</span>
+</div>
+<h3 class="font-headline font-bold text-sm tracking-tight text-zinc-900 uppercase">Advanced Robotics</h3>
+<p class="text-xs text-zinc-500 mt-1 font-body">Automated precision for large-scale operations.</p>
+</div>
+</div>
+<!-- 2. Additive Layering -->
+<div class="orbit-item pos-2 group">
+<div class="w-56 bg-surface-container-lowest p-5 border-l-4 border-zinc-400 shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-zinc-600" data-icon="layers">layers</span>
+<span class="font-label text-[10px] font-bold text-zinc-400">02</span>
+</div>
+<h3 class="font-headline font-bold text-sm tracking-tight text-zinc-900 uppercase">Additive Layering</h3>
+<p class="text-xs text-zinc-500 mt-1 font-body">Next-gen 3D fabrication of alloy structures.</p>
+</div>
+</div>
+<!-- 3. Material Science -->
+<div class="orbit-item pos-3 group">
+<div class="w-56 bg-surface-container-lowest p-5 border-l-4 border-primary shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="science">science</span>
+<span class="font-label text-[10px] font-bold text-zinc-400">03</span>
+</div>
+<h3 class="font-headline font-bold text-sm tracking-tight text-zinc-900 uppercase">Material Science</h3>
+<p class="text-xs text-zinc-500 mt-1 font-body">Development of high-stress thermal composites.</p>
+</div>
+</div>
+<!-- 4. Digital Twins -->
+<div class="orbit-item pos-4 group">
+<div class="w-56 bg-surface-container-lowest p-5 border-l-4 border-zinc-400 shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-zinc-600" data-icon="dynamic_form">dynamic_form</span>
+<span class="font-label text-[10px] font-bold text-zinc-400">04</span>
+</div>
+<h3 class="font-headline font-bold text-sm tracking-tight text-zinc-900 uppercase">Digital Twins</h3>
+<p class="text-xs text-zinc-500 mt-1 font-body">Real-time simulation for predictive load.</p>
+</div>
+</div>
+<!-- 5. Smart Logistics -->
+<div class="orbit-item pos-5 group">
+<div class="w-56 bg-surface-container-lowest p-5 border-l-4 border-primary shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="conveyor_belt">conveyor_belt</span>
+<span class="font-label text-[10px] font-bold text-zinc-400">05</span>
+</div>
+<h3 class="font-headline font-bold text-sm tracking-tight text-zinc-900 uppercase">Smart Logistics</h3>
+<p class="text-xs text-zinc-500 mt-1 font-body">Adaptive supply chain with AI-routing.</p>
+</div>
+</div>
+<!-- 6. Precision Machining -->
+<div class="orbit-item pos-6 group">
+<div class="w-56 bg-surface-container-lowest p-5 border-l-4 border-zinc-400 shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-zinc-600" data-icon="settings_suggest">settings_suggest</span>
+<span class="font-label text-[10px] font-bold text-zinc-400">06</span>
+</div>
+<h3 class="font-headline font-bold text-sm tracking-tight text-zinc-900 uppercase">Precision Machining</h3>
+<p class="text-xs text-zinc-500 mt-1 font-body">Sub-micron tolerance for aerospace components.</p>
+</div>
+</div>
+<!-- 7. Energy Systems -->
+<div class="orbit-item pos-7 group">
+<div class="w-56 bg-surface-container-lowest p-5 border-l-4 border-primary shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="bolt">bolt</span>
+<span class="font-label text-[10px] font-bold text-zinc-400">07</span>
+</div>
+<h3 class="font-headline font-bold text-sm tracking-tight text-zinc-900 uppercase">Energy Systems</h3>
+<p class="text-xs text-zinc-500 mt-1 font-body">Sustainable power grid for heavy industry.</p>
+</div>
+</div>
+<!-- 8. Quality Control -->
+<div class="orbit-item pos-8 group">
+<div class="w-56 bg-surface-container-lowest p-5 border-l-4 border-zinc-400 shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-zinc-600" data-icon="verified">verified</span>
+<span class="font-label text-[10px] font-bold text-zinc-400">08</span>
+</div>
+<h3 class="font-headline font-bold text-sm tracking-tight text-zinc-900 uppercase">Quality Control</h3>
+<p class="text-xs text-zinc-500 mt-1 font-body">Zero-defect protocols and spectral analysis.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA / Secondary Info Section -->
+<section class="mt-32 grid md:grid-cols-2 gap-12 max-w-[1440px] mx-auto items-center">
+<div class="bg-surface-container-low p-12 relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline text-3xl font-black uppercase tracking-tighter mb-6">Scale Your Infrastructure</h2>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Our integrated systems allow for seamless scaling of industrial operations while maintaining architectural integrity and safety standards.</p>
+<button class="bg-zinc-900 text-white px-8 py-4 font-bold tracking-widest text-xs uppercase hover:bg-zinc-800 transition-colors">Download Technical Specs</button>
+</div>
+<div class="absolute -right-20 -bottom-20 opacity-5">
+<span class="material-symbols-outlined text-[200px]" data-icon="architecture">architecture</span>
+</div>
+</div>
+<div class="relative aspect-video bg-zinc-200">
+<img alt="Industrial Control Center" class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="Close-up of industrial machinery and robotic arms in a high-tech manufacturing facility with red accent lighting and clean grey metallic surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzDLBufh5vS3ZbSaz2Xk9cyjivDkAbE0OBGrNk7Z6KETgTYL2fPkuKO4FwxUJx0oToPkagsrJewASOHegx7RWLGSO_eAH7jjJL1flWoypdIBYGOR1PIP1nK5Wnb8g9bBYwK4KeVhDVI_YxurEXnWFESxbrnlh2D1O-68XHaMCSSEKC4tSeobcvZHjR6d9DzKS6iDtQyf0_45DZqnh-R0S-NQTwqHvbmM4X8_w3v0u0znpq_h_V21paO2337dDBOkUe5y4re7L0rBU"/>
+<div class="absolute bottom-6 left-6 bg-white/10 backdrop-blur-md p-4 text-white">
+<p class="font-label text-[10px] tracking-widest uppercase mb-1">Live Status</p>
+<p class="font-headline font-bold text-sm">Automated Floor 4G Active</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-900 dark:bg-black w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-t border-zinc-800 pt-8 max-w-[1440px] mx-auto">
+<div class="font-body text-xs uppercase tracking-widest text-zinc-400">
+                © 2024 Industrial Authority Systems. All Rights Reserved. Precision Engineering Protocol.
+            </div>
+<div class="flex gap-6 justify-start md:justify-end">
+<a class="font-body text-xs uppercase tracking-widest text-zinc-500 hover:text-red-500 transition-all duration-300 underline underline-offset-4" href="#">Privacy</a>
+<a class="font-body text-xs uppercase tracking-widest text-zinc-500 hover:text-red-500 transition-all duration-300 underline underline-offset-4" href="#">Technical Specs</a>
+<a class="font-body text-xs uppercase tracking-widest text-zinc-500 hover:text-red-500 transition-all duration-300 underline underline-offset-4" href="#">Compliance</a>
+<a class="font-body text-xs uppercase tracking-widest text-zinc-500 hover:text-red-500 transition-all duration-300 underline underline-offset-4" href="#">Global Support</a>
+</div>
+</div>
+</footer>
+</body></html>

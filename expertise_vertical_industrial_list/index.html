@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#bbc3ff",
+              "secondary-fixed": "#ffdad4",
+              "primary-container": "#b30000",
+              "outline": "#916f6a",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#852217",
+              "on-tertiary-fixed": "#000f5d",
+              "inverse-surface": "#2f3131",
+              "on-primary-fixed": "#410000",
+              "outline-variant": "#e6bdb7",
+              "background": "#f9f9f9",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#72140b",
+              "surface-variant": "#e2e2e2",
+              "inverse-primary": "#ffb4a8",
+              "surface-tint": "#be0f07",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#1a1c1c",
+              "on-tertiary-container": "#c4caff",
+              "on-error": "#ffffff",
+              "surface-dim": "#dadada",
+              "secondary-fixed-dim": "#ffb4a8",
+              "on-error-container": "#93000a",
+              "primary": "#870000",
+              "on-surface-variant": "#5c403b",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "secondary-container": "#ff7c69",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#ffdad4",
+              "tertiary-container": "#0038f7",
+              "surface-container-high": "#e8e8e8",
+              "surface": "#f9f9f9",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#002dcc",
+              "secondary": "#a63a2c",
+              "on-secondary-fixed": "#410000",
+              "on-primary-container": "#ffbeb4",
+              "on-background": "#1a1c1c",
+              "tertiary": "#0028bb",
+              "on-primary-fixed-variant": "#930000",
+              "surface-bright": "#f9f9f9",
+              "tertiary-fixed": "#dee0ff",
+              "primary-fixed-dim": "#ffb4a8",
+              "surface-container-low": "#f3f3f3",
+              "surface-container": "#eeeeee"
+            },
+            fontFamily: {
+              "headline": ["Work Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black text-red-700 dark:text-red-600 tracking-tighter font-headline uppercase">
+                Industrial Authority
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-headline font-bold tracking-tight uppercase text-red-700 dark:text-red-600 border-b-2 border-red-700 pb-1" href="#">Expertise</a>
+<a class="font-headline font-bold tracking-tight uppercase text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors" href="#">Solutions</a>
+<a class="font-headline font-bold tracking-tight uppercase text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors" href="#">Process</a>
+<a class="font-headline font-bold tracking-tight uppercase text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors" href="#">Innovation</a>
+<a class="font-headline font-bold tracking-tight uppercase text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-headline font-bold uppercase tracking-wider text-sm rounded-sm hover:opacity-90 active:scale-95 transition-all">
+                Request Quote
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-end px-12 pb-16 bg-gradient-to-br from-primary to-primary-container overflow-hidden">
+<div class="absolute inset-0 opacity-20 mix-blend-overlay">
+<img alt="" class="w-full h-full object-cover" data-alt="dramatic industrial factory interior with heavy machinery and sparks in cool blue and orange tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2-j1qF13ORU8s4Vpl22hVTJ70DLxANDjtZ161W5iHRDdQCuLi7sg1FKpfBjIm6SdEz9jQ1yEh6iRH-oqfKQGnvGC3jCeVcNVjZBXmtCuhlZx_XbCXIj-IHUV9x8z3_DRaSNyV-cjMF6qXylPc8pSuvtHy78Kk-C75u4pzo99NbEmqS7oOn9ubuRuMnSnBDxibjJehuzLlQmXOjT8QC-PHCOU8gg1puMFzJTwnEt9k4gO4BdeDw1wiWiQQbUdvpFh1uL_5AMYKMpY"/>
+</div>
+<div class="relative z-10 max-w-4xl">
+<h1 class="text-white font-headline text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.9]">
+                    Technical<br/>Dominance
+                </h1>
+<p class="mt-6 text-on-primary-container max-w-xl font-body text-lg font-medium">
+                    Defining the next generation of industrial standards through precision engineering and autonomous systems.
+                </p>
+</div>
+</section>
+<!-- Vertical Industrial List Section -->
+<section class="py-24 px-8 md:px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="text-primary font-headline font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Core Capabilities</span>
+<h2 class="text-on-surface font-headline text-5xl font-black uppercase tracking-tighter leading-none">Our Expertise</h2>
+</div>
+<div class="h-1 bg-primary w-32 hidden md:block mb-4"></div>
+</div>
+<!-- Expertise List: Vertical Industrial Layout -->
+<div class="flex flex-col space-y-4">
+<!-- Item 1 -->
+<div class="group flex items-center bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 min-h-[120px]">
+<div class="w-24 md:w-32 flex justify-center items-center font-headline text-4xl md:text-6xl font-black text-outline/20 group-hover:text-primary transition-colors">
+                            01
+                        </div>
+<div class="flex-grow py-6 px-4 md:px-8 border-l border-outline/10">
+<h3 class="font-headline text-xl md:text-2xl font-black uppercase text-on-surface tracking-tight mb-1">Advanced Robotics</h3>
+<p class="text-on-surface-variant font-body text-sm md:text-base max-w-2xl">High-fidelity autonomous systems designed for extreme environments and complex assembly chains.</p>
+</div>
+<div class="w-24 md:w-32 flex justify-center items-center text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="smart_toy">smart_toy</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group flex items-center bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 min-h-[120px]">
+<div class="w-24 md:w-32 flex justify-center items-center font-headline text-4xl md:text-6xl font-black text-outline/20 group-hover:text-primary transition-colors">
+                            02
+                        </div>
+<div class="flex-grow py-6 px-4 md:px-8 border-l border-outline/10">
+<h3 class="font-headline text-xl md:text-2xl font-black uppercase text-on-surface tracking-tight mb-1">Additive Layering</h3>
+<p class="text-on-surface-variant font-body text-sm md:text-base max-w-2xl">Industrial-scale 3D fabrication using aerospace-grade alloys and performance polymers.</p>
+</div>
+<div class="w-24 md:w-32 flex justify-center items-center text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="layers">layers</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group flex items-center bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 min-h-[120px]">
+<div class="w-24 md:w-32 flex justify-center items-center font-headline text-4xl md:text-6xl font-black text-outline/20 group-hover:text-primary transition-colors">
+                            03
+                        </div>
+<div class="flex-grow py-6 px-4 md:px-8 border-l border-outline/10">
+<h3 class="font-headline text-xl md:text-2xl font-black uppercase text-on-surface tracking-tight mb-1">Material Science</h3>
+<p class="text-on-surface-variant font-body text-sm md:text-base max-w-2xl">Molecular engineering of surfaces for enhanced durability, thermal resistance, and structural integrity.</p>
+</div>
+<div class="w-24 md:w-32 flex justify-center items-center text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="science">science</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group flex items-center bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 min-h-[120px]">
+<div class="w-24 md:w-32 flex justify-center items-center font-headline text-4xl md:text-6xl font-black text-outline/20 group-hover:text-primary transition-colors">
+                            04
+                        </div>
+<div class="flex-grow py-6 px-4 md:px-8 border-l border-outline/10">
+<h3 class="font-headline text-xl md:text-2xl font-black uppercase text-on-surface tracking-tight mb-1">Digital Twins</h3>
+<p class="text-on-surface-variant font-body text-sm md:text-base max-w-2xl">Virtual replication of physical assets for real-time monitoring and predictive failure analysis.</p>
+</div>
+<div class="w-24 md:w-32 flex justify-center items-center text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="group flex items-center bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 min-h-[120px]">
+<div class="w-24 md:w-32 flex justify-center items-center font-headline text-4xl md:text-6xl font-black text-outline/20 group-hover:text-primary transition-colors">
+                            05
+                        </div>
+<div class="flex-grow py-6 px-4 md:px-8 border-l border-outline/10">
+<h3 class="font-headline text-xl md:text-2xl font-black uppercase text-on-surface tracking-tight mb-1">Smart Logistics</h3>
+<p class="text-on-surface-variant font-body text-sm md:text-base max-w-2xl">AI-driven supply chain optimization ensuring zero-latency movement across global networks.</p>
+</div>
+<div class="w-24 md:w-32 flex justify-center items-center text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="local_shipping">local_shipping</span>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="group flex items-center bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 min-h-[120px]">
+<div class="w-24 md:w-32 flex justify-center items-center font-headline text-4xl md:text-6xl font-black text-outline/20 group-hover:text-primary transition-colors">
+                            06
+                        </div>
+<div class="flex-grow py-6 px-4 md:px-8 border-l border-outline/10">
+<h3 class="font-headline text-xl md:text-2xl font-black uppercase text-on-surface tracking-tight mb-1">Precision Machining</h3>
+<p class="text-on-surface-variant font-body text-sm md:text-base max-w-2xl">Micron-level accuracy using state-of-the-art multi-axis milling and laser ablation.</p>
+</div>
+<div class="w-24 md:w-32 flex justify-center items-center text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="settings_suggest">settings_suggest</span>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="group flex items-center bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 min-h-[120px]">
+<div class="w-24 md:w-32 flex justify-center items-center font-headline text-4xl md:text-6xl font-black text-outline/20 group-hover:text-primary transition-colors">
+                            07
+                        </div>
+<div class="flex-grow py-6 px-4 md:px-8 border-l border-outline/10">
+<h3 class="font-headline text-xl md:text-2xl font-black uppercase text-on-surface tracking-tight mb-1">Energy Systems</h3>
+<p class="text-on-surface-variant font-body text-sm md:text-base max-w-2xl">Sustainable power architectures for industrial plants including grid-independent hydrogen cells.</p>
+</div>
+<div class="w-24 md:w-32 flex justify-center items-center text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="bolt">bolt</span>
+</div>
+</div>
+<!-- Item 8 -->
+<div class="group flex items-center bg-surface-container-low hover:bg-surface-container-high transition-all duration-300 min-h-[120px]">
+<div class="w-24 md:w-32 flex justify-center items-center font-headline text-4xl md:text-6xl font-black text-outline/20 group-hover:text-primary transition-colors">
+                            08
+                        </div>
+<div class="flex-grow py-6 px-4 md:px-8 border-l border-outline/10">
+<h3 class="font-headline text-xl md:text-2xl font-black uppercase text-on-surface tracking-tight mb-1">Quality Control</h3>
+<p class="text-on-surface-variant font-body text-sm md:text-base max-w-2xl">Automated vision inspection and non-destructive testing for absolute reliability.</p>
+</div>
+<div class="w-24 md:w-32 flex justify-center items-center text-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="verified">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section (Tonal Layering) -->
+<section class="bg-surface-container-low py-20 px-12">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col border-l-4 border-primary pl-6">
+<span class="font-headline text-5xl font-black text-on-surface tracking-tighter">450+</span>
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Patents Filed</span>
+</div>
+<div class="flex flex-col border-l-4 border-primary pl-6">
+<span class="font-headline text-5xl font-black text-on-surface tracking-tighter">12</span>
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Global Hubs</span>
+</div>
+<div class="flex flex-col border-l-4 border-primary pl-6">
+<span class="font-headline text-5xl font-black text-on-surface tracking-tighter">99.9%</span>
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Uptime Rate</span>
+</div>
+<div class="flex flex-col border-l-4 border-primary pl-6">
+<span class="font-headline text-5xl font-black text-on-surface tracking-tighter">24/7</span>
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Technical Support</span>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-12 bg-white flex justify-center overflow-hidden relative">
+<div class="absolute -right-24 top-0 h-full opacity-5 pointer-events-none">
+<span class="font-headline text-[20rem] font-black uppercase leading-none text-on-surface select-none">AUTHORITY</span>
+</div>
+<div class="max-w-4xl text-center relative z-10">
+<h2 class="font-headline text-5xl md:text-7xl font-black uppercase tracking-tighter text-on-surface mb-8">Ready to evolve?</h2>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-12 py-4 font-headline font-black uppercase tracking-widest text-lg rounded-sm hover:opacity-90 active:scale-95 transition-all">
+                        Request Quote
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-12 py-4 font-headline font-black uppercase tracking-widest text-lg rounded-sm hover:bg-surface-container-high active:scale-95 transition-all">
+                        View Case Studies
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t-4 border-red-700 bg-zinc-900 dark:bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0">
+<div class="text-xl font-bold text-white font-headline uppercase tracking-tighter mb-2">Industrial Authority</div>
+<p class="font-['Work_Sans'] text-sm tracking-wide text-zinc-400">© 2024 Industrial Authority. Precision Engineering.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Work_Sans'] text-sm tracking-wide text-zinc-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Work_Sans'] text-sm tracking-wide text-zinc-400 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-['Work_Sans'] text-sm tracking-wide text-zinc-400 hover:text-white transition-colors" href="#">Compliance</a>
+<a class="font-['Work_Sans'] text-sm tracking-wide text-zinc-400 hover:text-white transition-colors" href="#">Global Offices</a>
+</div>
+</div>
+</footer>
+</body></html>

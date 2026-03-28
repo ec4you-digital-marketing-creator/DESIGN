@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Work+Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#72140b",
+              "on-primary-fixed-variant": "#930000",
+              "inverse-surface": "#2f3131",
+              "on-background": "#1a1c1c",
+              "outline-variant": "#e6bdb7",
+              "on-secondary": "#ffffff",
+              "secondary": "#a63a2c",
+              "surface-container-lowest": "#ffffff",
+              "primary": "#870000",
+              "background": "#f9f9f9",
+              "surface-variant": "#e2e2e2",
+              "surface-dim": "#dadada",
+              "tertiary-container": "#0038f7",
+              "tertiary-fixed": "#dee0ff",
+              "tertiary": "#0028bb",
+              "surface-container-highest": "#e2e2e2",
+              "on-surface": "#1a1c1c",
+              "inverse-primary": "#ffb4a8",
+              "surface-container": "#eeeeee",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed": "#000f5d",
+              "primary-fixed-dim": "#ffb4a8",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#ffb4a8",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed-variant": "#852217",
+              "on-secondary-fixed": "#410000",
+              "on-primary-fixed": "#410000",
+              "surface-tint": "#be0f07",
+              "surface-bright": "#f9f9f9",
+              "on-surface-variant": "#5c403b",
+              "tertiary-fixed-dim": "#bbc3ff",
+              "error": "#ba1a1a",
+              "secondary-fixed": "#ffdad4",
+              "on-primary-container": "#ffbeb4",
+              "surface-container-low": "#f3f3f3",
+              "secondary-container": "#ff7c69",
+              "on-tertiary-container": "#c4caff",
+              "surface-container-high": "#e8e8e8",
+              "outline": "#916f6a",
+              "on-tertiary-fixed-variant": "#002dcc",
+              "primary-fixed": "#ffdad4",
+              "inverse-on-surface": "#f1f1f1",
+              "primary-container": "#b30000",
+              "on-primary": "#ffffff",
+              "surface": "#f9f9f9"
+            },
+            fontFamily: {
+              "headline": ["Work Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 2rem;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Work Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black text-red-800 uppercase tracking-tighter">
+            Industrial Architect
+        </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-red-800 border-b-2 border-red-800 pb-1 font-bold tracking-tight" href="#">Expertise</a>
+<a class="text-zinc-600 hover:text-red-700 transition-colors font-bold tracking-tight" href="#">Services</a>
+<a class="text-zinc-600 hover:text-red-700 transition-colors font-bold tracking-tight" href="#">Projects</a>
+<a class="text-zinc-600 hover:text-red-700 transition-colors font-bold tracking-tight" href="#">Insights</a>
+<a class="text-zinc-600 hover:text-red-700 transition-colors font-bold tracking-tight" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-bold uppercase tracking-widest text-xs hover:scale-95 transition-transform duration-150">
+            Get a Quote
+        </button>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Section Header -->
+<header class="mb-24 border-l-4 border-primary pl-8">
+<span class="text-primary font-bold tracking-widest uppercase text-sm block mb-2">Technical Capabilities</span>
+<h1 class="text-5xl md:text-7xl font-black text-zinc-900 tracking-tighter leading-none mb-6">
+                Our Expertise
+            </h1>
+<p class="max-w-2xl text-on-surface-variant text-lg leading-relaxed">
+                Precision engineering and industrial excellence delivered through a modular framework of specialized manufacturing processes.
+            </p>
+</header>
+<!-- Expertise Matrix (4x2) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-surface-container">
+<!-- Item 1: Advanced Robotics -->
+<div class="group bg-surface p-10 hover:bg-surface-container-lowest transition-all duration-300">
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="text-surface-container-highest font-mono text-xl group-hover:text-primary transition-colors">01</span>
+</div>
+<h3 class="text-xl font-bold text-zinc-900 mb-4 tracking-tight">Advanced Robotics</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Automated assembly lines featuring multi-axis precision for high-volume production with zero-defect tolerance.
+                </p>
+</div>
+<!-- Item 2: Additive Layering -->
+<div class="group bg-surface p-10 hover:bg-surface-container-lowest transition-all duration-300">
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary" data-icon="layers">layers</span>
+<span class="text-surface-container-highest font-mono text-xl group-hover:text-primary transition-colors">02</span>
+</div>
+<h3 class="text-xl font-bold text-zinc-900 mb-4 tracking-tight">Additive Layering</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Industrial-scale 3D printing utilizing high-grade polymers and metal alloys for complex geometric integrity.
+                </p>
+</div>
+<!-- Item 3: Material Science -->
+<div class="group bg-surface p-10 hover:bg-surface-container-lowest transition-all duration-300">
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary" data-icon="science">science</span>
+<span class="text-surface-container-highest font-mono text-xl group-hover:text-primary transition-colors">03</span>
+</div>
+<h3 class="text-xl font-bold text-zinc-900 mb-4 tracking-tight">Material Science</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Advanced testing and development of lightweight composites designed for extreme structural performance.
+                </p>
+</div>
+<!-- Item 4: Digital Twins -->
+<div class="group bg-surface p-10 hover:bg-surface-container-lowest transition-all duration-300">
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary" data-icon="view_in_ar">view_in_ar</span>
+<span class="text-surface-container-highest font-mono text-xl group-hover:text-primary transition-colors">04</span>
+</div>
+<h3 class="text-xl font-bold text-zinc-900 mb-4 tracking-tight">Digital Twins</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Real-time virtual modeling for predictive maintenance and pre-production performance optimization.
+                </p>
+</div>
+<!-- Item 5: Smart Logistics -->
+<div class="group bg-surface p-10 hover:bg-surface-container-lowest transition-all duration-300">
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary" data-icon="conveyor_belt">conveyor_belt</span>
+<span class="text-surface-container-highest font-mono text-xl group-hover:text-primary transition-colors">05</span>
+</div>
+<h3 class="text-xl font-bold text-zinc-900 mb-4 tracking-tight">Smart Logistics</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    AI-driven supply chain management ensuring just-in-time delivery and carbon-neutral distribution.
+                </p>
+</div>
+<!-- Item 6: Precision Machining -->
+<div class="group bg-surface p-10 hover:bg-surface-container-lowest transition-all duration-300">
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary" data-icon="settings_suggest">settings_suggest</span>
+<span class="text-surface-container-highest font-mono text-xl group-hover:text-primary transition-colors">06</span>
+</div>
+<h3 class="text-xl font-bold text-zinc-900 mb-4 tracking-tight">Precision Machining</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    High-tolerance CNC machining for aerospace and medical grade components with sub-micron accuracy.
+                </p>
+</div>
+<!-- Item 7: Energy Systems -->
+<div class="group bg-surface p-10 hover:bg-surface-container-lowest transition-all duration-300">
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary" data-icon="bolt">bolt</span>
+<span class="text-surface-container-highest font-mono text-xl group-hover:text-primary transition-colors">07</span>
+</div>
+<h3 class="text-xl font-bold text-zinc-900 mb-4 tracking-tight">Energy Systems</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Sustainable power infrastructure integration, focusing on hydrogen storage and battery density.
+                </p>
+</div>
+<!-- Item 8: Quality Control -->
+<div class="group bg-surface p-10 hover:bg-surface-container-lowest transition-all duration-300">
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+<span class="text-surface-container-highest font-mono text-xl group-hover:text-primary transition-colors">08</span>
+</div>
+<h3 class="text-xl font-bold text-zinc-900 mb-4 tracking-tight">Quality Control</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Six Sigma certified auditing and automated optical inspection for uncompromising quality standards.
+                </p>
+</div>
+</div>
+<!-- CTA Section -->
+<section class="mt-24 p-12 bg-zinc-900 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="text-white">
+<h2 class="text-3xl font-bold mb-2">Build the future of industry.</h2>
+<p class="text-zinc-400">Download our full technical capabilities brochure for 2024.</p>
+</div>
+<button class="bg-primary text-on-primary px-8 py-4 font-bold uppercase tracking-widest flex items-center gap-4 hover:bg-primary-container transition-colors">
+                Brochure 2024
+                <span class="material-symbols-outlined">download</span>
+</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-900 w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6 border-t border-zinc-800">
+<div class="text-xl font-bold text-white uppercase tracking-tighter">
+            Industrial Architect
+        </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-zinc-400 hover:text-white transition-colors text-sm tracking-wide" href="#">Privacy Policy</a>
+<a class="text-zinc-400 hover:text-white transition-colors text-sm tracking-wide" href="#">Terms of Service</a>
+<a class="text-zinc-400 hover:text-white transition-colors text-sm tracking-wide" href="#">Compliance</a>
+<a class="text-zinc-400 hover:text-white transition-colors text-sm tracking-wide" href="#">Global Locations</a>
+</div>
+<div class="text-zinc-400 text-sm tracking-wide text-center md:text-right">
+            © 2024 Industrial Architect. All rights reserved. Precision in Every Layer.
+        </div>
+</footer>
+</body></html>

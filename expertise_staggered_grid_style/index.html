@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Work_Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#0038f7",
+              "background": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "on-error": "#ffffff",
+              "tertiary-fixed": "#dee0ff",
+              "surface-bright": "#f9f9f9",
+              "primary-fixed": "#ffdad4",
+              "tertiary-fixed-dim": "#bbc3ff",
+              "on-tertiary-fixed": "#000f5d",
+              "secondary-container": "#ff7c69",
+              "surface-container-low": "#f3f3f3",
+              "surface-container-highest": "#e2e2e2",
+              "error": "#ba1a1a",
+              "on-primary-fixed-variant": "#930000",
+              "outline": "#916f6a",
+              "surface-container": "#eeeeee",
+              "secondary-fixed": "#ffdad4",
+              "on-tertiary-fixed-variant": "#002dcc",
+              "surface-dim": "#dadada",
+              "primary-container": "#b30000",
+              "surface-tint": "#be0f07",
+              "on-secondary-fixed-variant": "#852217",
+              "on-secondary-container": "#72140b",
+              "primary-fixed-dim": "#ffb4a8",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "primary": "#870000",
+              "inverse-surface": "#2f3131",
+              "on-secondary-fixed": "#410000",
+              "on-primary-container": "#ffbeb4",
+              "inverse-on-surface": "#f1f1f1",
+              "on-surface-variant": "#5c403b",
+              "outline-variant": "#e6bdb7",
+              "inverse-primary": "#ffb4a8",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#c4caff",
+              "tertiary": "#0028bb",
+              "on-primary": "#ffffff",
+              "secondary": "#a63a2c",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#410000",
+              "secondary-fixed-dim": "#ffb4a8",
+              "surface-container-high": "#e8e8e8",
+              "surface": "#f9f9f9",
+              "error-container": "#ffdad6",
+              "surface-variant": "#e2e2e2",
+              "on-background": "#1a1c1c"
+            },
+            fontFamily: {
+              "headline": ["Work Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 240px;
+            gap: 1.5rem;
+        }
+        @media (max-width: 1024px) {
+            .bento-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+                grid-auto-rows: auto;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 h-20 max-w-full mx-auto">
+<div class="text-2xl font-black text-red-800 dark:text-red-600 tracking-tighter font-headline uppercase">
+                MANUFACTURING CORE
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-headline font-bold uppercase tracking-tight text-red-800 dark:text-red-500 border-b-2 border-red-800 pb-1" href="#">Expertise</a>
+<a class="font-headline font-bold uppercase tracking-tight text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors" href="#">Solutions</a>
+<a class="font-headline font-bold uppercase tracking-tight text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors" href="#">Systems</a>
+<a class="font-headline font-bold uppercase tracking-tight text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors" href="#">Safety</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-none font-headline font-bold uppercase text-sm tracking-widest hover:bg-primary-container transition-all">
+                    Contact Us
+                </button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Section Header -->
+<header class="mb-20 flex flex-col md:flex-row items-end justify-between gap-8">
+<div class="max-w-2xl">
+<div class="flex items-center gap-4 mb-4">
+<div class="h-1 w-12 bg-primary"></div>
+<span class="font-headline text-primary font-extrabold uppercase tracking-[0.2em] text-sm">Industrial Leadership</span>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl font-black text-on-surface leading-none uppercase tracking-tighter">
+                    Our <span class="text-primary">Expertise</span>
+</h1>
+<p class="mt-8 text-xl text-on-surface-variant font-medium leading-relaxed">
+                    Engineering the next generation of industrial performance through precision, scale, and digital intelligence.
+                </p>
+</div>
+<div class="hidden lg:block text-right">
+<span class="block text-8xl font-black text-surface-container-highest select-none leading-none">09 / 15</span>
+<span class="font-label text-xs uppercase tracking-widest text-outline">Layout Variation</span>
+</div>
+</header>
+<!-- Staggered Bento Grid -->
+<div class="bento-grid">
+<!-- Card 1: Advanced Robotics (Large Vertical) -->
+<div class="md:row-span-2 group relative overflow-hidden bg-surface-container-high">
+<img class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-50 group-hover:scale-110 transition-transform duration-700" data-alt="Close-up of a high-precision robotic arm performing delicate assembly in a dark, high-tech industrial facility with red accent lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2FAEOIJn5CrnglVaiL8Qz85pNDNgpCqFWG_4z7padoVEAGPq5bF9JLeudeLzbuY0ysngILXr8CC2EAUH8JVF0nxsOwtgbeFBRqlrZ9jhfqTc0dUpKrH5SwxiwsaBOlsYswTtVtu_OKizyQ0gCKL5G35HEj05LvYUQ8ctANW7l2NhwdBUS9cWnXwgKmDnc9zaKyrWIbdbZ0SbQIlgOzh7QMJJlmKXTOuEQlj1w56TFVG5LS5w9kFet1XRD7T1Ds2j8o9Qc6_nIwME"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+<div class="relative h-full p-8 flex flex-col justify-end">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-weight="fill">precision_manufacturing</span>
+<h3 class="font-headline text-3xl font-black text-white uppercase leading-none mb-4">Advanced Robotics</h3>
+<p class="text-white/70 font-body text-sm leading-relaxed">Autonomous systems integrated with machine learning for high-speed precision manufacturing and assembly lines.</p>
+</div>
+</div>
+<!-- Card 2: Additive Layering (Standard) -->
+<div class="md:col-span-2 group relative overflow-hidden bg-primary">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+<div class="relative p-8 flex flex-col justify-between h-full">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-white text-5xl">layers</span>
+<span class="text-white/30 font-headline font-black text-4xl">02</span>
+</div>
+<div>
+<h3 class="font-headline text-4xl font-black text-white uppercase leading-none mb-2">Additive Layering</h3>
+<p class="text-white/80 font-body max-w-md">Multi-material 3D printing at industrial scale, reducing waste and enabling complex geometries impossible through traditional milling.</p>
+</div>
+</div>
+</div>
+<!-- Card 3: Material Science (Standard) -->
+<div class="group relative overflow-hidden bg-surface-container-highest">
+<div class="p-8 h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-on-surface text-3xl">science</span>
+<div>
+<h3 class="font-headline text-xl font-extrabold text-on-surface uppercase mb-2">Material Science</h3>
+<div class="h-1 w-8 bg-primary mb-3"></div>
+<p class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider">Polymer &amp; Alloy Innovation</p>
+</div>
+</div>
+</div>
+<!-- Card 4: Digital Twins (Standard) -->
+<div class="group relative overflow-hidden bg-surface-container-low border-l-4 border-primary">
+<div class="p-8 h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-3xl">hub</span>
+<div>
+<h3 class="font-headline text-xl font-extrabold text-on-surface uppercase mb-2">Digital Twins</h3>
+<p class="text-on-surface-variant text-sm">Real-time virtual replicas of physical assets for predictive performance modeling.</p>
+</div>
+</div>
+</div>
+<!-- Card 5: Smart Logistics (Standard) -->
+<div class="group relative overflow-hidden bg-white shadow-sm">
+<div class="p-8 h-full flex flex-col">
+<div class="flex items-center gap-2 mb-4">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label text-[10px] uppercase tracking-[0.3em] font-bold text-outline">Real-time Stream</span>
+</div>
+<h3 class="font-headline text-xl font-extrabold text-on-surface uppercase mb-auto">Smart Logistics</h3>
+<span class="material-symbols-outlined text-on-surface-variant self-end text-4xl opacity-20">conveyor_belt</span>
+</div>
+</div>
+<!-- Card 6: Precision Machining (Standard) -->
+<div class="md:col-span-2 group relative overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Industrial lathe machine processing a metal component with sparks and cooling fluid in a sharp, editorial photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh4OLNVnDSAKCV4YWHSWeS_lmXchCesqIur0tL3fP-QqMWWacxN4lEiJNPsinOXxc6ntMzHyhCkaAzEou8imNaDkXOk9dyM35GDREQrS4ppP9G4rupdDwp38RR9xNl8ymtifCgV3xxQ3aBfD0xBxj81uLKH2rIM8Fzqzt4HGk0sFzQyzTaglgNW7eZUBPRmqkfcN-4wEJZf6NmzPmx4TiyMCoiBnmpFZtRbZgbAnHfbVioKEUUWQk0mwMQYvKu5zYBnxxX08mjZbA"/>
+<div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
+<div class="relative p-8 flex flex-col justify-center items-center text-center h-full border border-white/10">
+<h3 class="font-headline text-4xl font-black text-white uppercase tracking-tighter">Precision Machining</h3>
+<p class="text-white/90 font-medium mt-2">Micron-level accuracy for mission-critical aerospace components.</p>
+</div>
+</div>
+<!-- Card 7: Energy Systems (Large Horizontal) -->
+<div class="md:col-span-3 group relative overflow-hidden bg-surface-container-highest">
+<div class="flex flex-col md:flex-row h-full">
+<div class="md:w-1/2 p-12 flex flex-col justify-center">
+<span class="font-label text-xs uppercase tracking-widest text-primary font-bold mb-4">Infrastructure</span>
+<h3 class="font-headline text-4xl font-black text-on-surface uppercase mb-6 leading-tight">High-Efficiency<br/>Energy Systems</h3>
+<div class="flex gap-4">
+<div class="flex flex-col">
+<span class="text-2xl font-black text-primary">98.4%</span>
+<span class="text-[10px] uppercase font-bold text-outline tracking-wider">Uptime</span>
+</div>
+<div class="w-px h-10 bg-outline-variant"></div>
+<div class="flex flex-col">
+<span class="text-2xl font-black text-primary">-40%</span>
+<span class="text-[10px] uppercase font-bold text-outline tracking-wider">Carbon</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 relative min-h-[200px]">
+<img class="absolute inset-0 w-full h-full object-cover grayscale brightness-50" data-alt="Abstract view of high-voltage industrial power lines and insulators against a moody grey sky with sharp contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNB09DWKHioXXVmWVIa7nqMOSmh5WuIADnVJ6FTrOJpUIZrTh2NpMpwearP-XPu4PN7kA9i2o0t_3QeIEBufkRak5XuyVIE73wMSk3I_ztpp9_E9mkVexenW62O33vISvaSkM5R7idb3wN4bC81uhEgdbpTxAn--ULpkLEMJQvrIJJZZf3si3PiAoSS-pD974CI833K2gIe-18k60UgvQx1YHT8LPSCSf1JOaqRkNt1ubwgQgQ84m3gLFvPpogpcBJTJOVrUm0mM4"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+</div>
+</div>
+<!-- Card 8: Quality Control (Standard) -->
+<div class="group relative overflow-hidden bg-zinc-900 flex items-center justify-center p-8">
+<div class="text-center">
+<div class="inline-block p-4 border border-primary mb-4">
+<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">verified</span>
+</div>
+<h3 class="font-headline text-lg font-black text-white uppercase tracking-widest">Quality Control</h3>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-900 dark:bg-black w-full border-t border-zinc-800">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 w-full">
+<div class="text-red-600 font-bold uppercase tracking-tighter mb-8 md:mb-0">
+                INDUSTRIAL ARCHITECT GLOBAL
+            </div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="font-['Inter'] text-sm tracking-wide text-zinc-500 hover:text-red-500 transition-colors" href="#">Technical Specs</a>
+<a class="font-['Inter'] text-sm tracking-wide text-zinc-500 hover:text-red-500 transition-colors" href="#">Privacy Protocol</a>
+<a class="font-['Inter'] text-sm tracking-wide text-zinc-500 hover:text-red-500 transition-colors" href="#">Compliance</a>
+<a class="font-['Inter'] text-sm tracking-wide text-zinc-500 hover:text-red-500 transition-colors" href="#">Global Offices</a>
+</div>
+<div class="font-['Inter'] text-sm tracking-wide text-zinc-500 text-center md:text-right">
+                © 2024 Industrial Architect Global. All Rights Reserved. Precision Engineering.
+            </div>
+</div>
+</footer>
+</body></html>

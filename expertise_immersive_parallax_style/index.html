@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Work_Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#bbc3ff",
+              "secondary-fixed": "#ffdad4",
+              "primary-container": "#b30000",
+              "outline": "#916f6a",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#852217",
+              "on-tertiary-fixed": "#000f5d",
+              "inverse-surface": "#2f3131",
+              "on-primary-fixed": "#410000",
+              "outline-variant": "#e6bdb7",
+              "background": "#f9f9f9",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#72140b",
+              "surface-variant": "#e2e2e2",
+              "inverse-primary": "#ffb4a8",
+              "surface-tint": "#be0f07",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#1a1c1c",
+              "on-tertiary-container": "#c4caff",
+              "on-error": "#ffffff",
+              "surface-dim": "#dadada",
+              "secondary-fixed-dim": "#ffb4a8",
+              "on-error-container": "#93000a",
+              "primary": "#870000",
+              "on-surface-variant": "#5c403b",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f1f1f1",
+              "secondary-container": "#ff7c69",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#ffdad4",
+              "tertiary-container": "#0038f7",
+              "surface-container-high": "#e8e8e8",
+              "surface": "#f9f9f9",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#002dcc",
+              "secondary": "#a63a2c",
+              "on-secondary-fixed": "#410000",
+              "on-primary-container": "#ffbeb4",
+              "on-background": "#1a1c1c",
+              "tertiary": "#0028bb",
+              "on-primary-fixed-variant": "#930000",
+              "surface-bright": "#f9f9f9",
+              "tertiary-fixed": "#dee0ff",
+              "primary-fixed-dim": "#ffb4a8",
+              "surface-container-low": "#f3f3f3",
+              "surface-container": "#eeeeee"
+            },
+            fontFamily: {
+              "headline": ["Work Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .parallax-section {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black text-red-700 dark:text-red-600 tracking-tighter font-headline">Industrial Authority</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-red-700 dark:text-red-600 border-b-2 border-red-700 pb-1 font-headline font-bold tracking-tight uppercase text-sm" href="#">Expertise</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors font-headline font-bold tracking-tight uppercase text-sm" href="#">Solutions</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors font-headline font-bold tracking-tight uppercase text-sm" href="#">Process</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors font-headline font-bold tracking-tight uppercase text-sm" href="#">Innovation</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-red-700 transition-colors font-headline font-bold tracking-tight uppercase text-sm" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2 font-headline font-bold uppercase text-xs tracking-widest hover:opacity-90 active:scale-95 transition-all">
+                    Request Quote
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-0">
+<!-- Section 1: Advanced Robotics -->
+<section class="parallax-section relative h-screen w-full flex items-center justify-center overflow-hidden" data-alt="high-tech robotic arm in a sterile modern factory performing precision assembly with cool blue lighting and motion blur" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcLz_9flaQ6ZzsC4p5azS4WxAPdjer9-ESkoRRt-KBKRc4cStkmgEnSwdkYe9dSKgB9kCxYKQ4fMEvk2DkYbkjhrGj2jqkhYGuy17RDLdMfHdKve3HEwhikHnnh1FaWnvW5eT7I2h772lqG4RT2tBzuQbr-KWazKnUuYbex6s-WB6SX07VHZKSOAFsywSKQdn0-7Eo1VLvPU01jJgCqU3-Crah9XECZRp5p3zJp7CaUpG8PYqPkyCP5lGEVmwf32gFmOgqxEC2bE0')">
+<div class="relative z-10 text-center px-6 max-w-5xl">
+<span class="text-primary-container bg-white/10 backdrop-blur-md px-4 py-1 font-headline font-bold tracking-widest text-sm uppercase mb-6 inline-block">01 — Core Capability</span>
+<h2 class="text-white font-headline font-black text-6xl md:text-9xl uppercase tracking-tighter leading-none mb-8">
+                    Advanced <span class="text-primary">Robotics</span>
+</h2>
+<p class="text-white/80 font-body text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
+                    Pioneering autonomous systems that redefine the limits of industrial speed and repeatable precision.
+                </p>
+</div>
+</section>
+<!-- Section 2: Additive Layering -->
+<section class="parallax-section relative h-screen w-full flex items-center justify-center overflow-hidden" data-alt="industrial 3D metal printer depositing layers of titanium powder with glowing laser sparks and sharp mechanical details" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtkUw08oXSF1E3n2N1cCMx1Gd30GBV9vgBBgvwlN6c9Qx2eApg0VYGMZ9eQgU2nAsndjylFY3JqSUAoKR1Fhjj_qFQdmr1YqiuOu0fyHY6OfZ1WZs_No3lrHNIElUdsgqHavyUVZtduIr9Su_6dbmKES7sDp08ksKJVvx0rZ35m5EYB3mxThRjfIQM6suF-T7FUpNOYwjeRUpxZpyyEcSSdxj7h85y39RZhGx1RlfHeGsT4eyoS_0D9S0ZVktiiEU-VlVZsI7B3t8')">
+<div class="relative z-10 text-right w-full px-12 md:px-24">
+<h2 class="text-white font-headline font-black text-6xl md:text-9xl uppercase tracking-tighter leading-none mb-6">
+                    Additive <br/><span class="text-primary">Layering</span>
+</h2>
+<div class="bg-primary-container p-8 md:p-12 inline-block max-w-xl text-left border-l-8 border-white">
+<p class="text-white font-body text-lg leading-relaxed">
+                        Complex geometries achieved through multi-material 3D deposition, reducing waste and accelerating time-to-market for critical components.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Section 3: Material Science -->
+<section class="parallax-section relative h-screen w-full flex items-center justify-center overflow-hidden" data-alt="scientist examining high-performance composite fiber structure under a microscope in a clean laboratory setting with sharp focus" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuHZsEWi0wuqlbm94sEr6ccjyR1QWmIdNo8Ebu8fEaM_IAwOx7qdrwHuJrynWwP4mXiLUJ4ZzCWBxcJ-ddstMxS2nWID9Dge6lfZbpWXvMxtmVIcVUKXnnvsI2BgxakfcQRWVAO9ikUdvp9wNsPfAym3eppCtkJpxzn-E-LgrCowHVST8OL1zCytefNoyObxPE3IyZ8dtPfRmiYwzpfLarPDLtgQ6e8nbJgoTYTUHcVcpsd035GvWJq3XbfpCBiVLQfF67lXgMtic')">
+<div class="relative z-10 text-left w-full px-12 md:px-24">
+<span class="text-primary font-headline font-extrabold text-9xl absolute -top-16 opacity-20 select-none">MAT-SCI</span>
+<h2 class="text-white font-headline font-black text-6xl md:text-9xl uppercase tracking-tighter leading-none mb-8 relative">
+                    Material <br/>Science
+                </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<p class="text-white/90 font-body text-xl leading-relaxed border-l-2 border-primary pl-8">
+                        Engineering molecular structures for extreme environments, from aerospace heat shields to deep-sea pressure vessels.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Section 4: Digital Twins -->
+<section class="parallax-section relative h-screen w-full flex items-center justify-center overflow-hidden" data-alt="abstract glowing blue circuit board pathways representing a digital simulation of a physical industrial engine component" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCL0Zt7xIpZnLUgYcTcMwYsO6bk0E8BCcIgraXrPwRoOQubpPYvg_hqXxcyMtZghhhJnuC6FEDXhcqgS8PjxnqcbvzDnpF1bTuidjcI4hVlXTi1t0cgx-qSjCYFW_vxZo6VVj0ngCIVEJhkg2Pg_3AF7GW_F3J1efRl842WBOdX3ajNndqMt6KpBdgkVD6aXHZwOsjhbMTgrfRzUb8qUk9I2tL21i3RKeoh0YxO0qqxInZ5o5wfraEc_lJWfsEwmabCqG3pp-MJ6a8')">
+<div class="relative z-10 container mx-auto px-8 flex flex-col items-center">
+<div class="w-full h-px bg-primary/50 mb-12"></div>
+<h2 class="text-white font-headline font-black text-6xl md:text-[10rem] uppercase tracking-tighter leading-none text-center">
+                    Digital <span class="text-primary">Twins</span>
+</h2>
+<div class="mt-12 backdrop-blur-xl bg-black/40 p-10 max-w-3xl text-center border border-white/10">
+<p class="text-white font-body text-xl uppercase tracking-widest font-light">Real-time virtual synchronization for predictive maintenance.</p>
+</div>
+</div>
+</section>
+<!-- Section 5: Smart Logistics -->
+<section class="parallax-section relative h-screen w-full flex items-center justify-center overflow-hidden" data-alt="aerial perspective of a massive automated distribution center with organized container stacks and moving transit bots at night" style="background-image: linear-gradient(rgba(135,0,0,0.2), rgba(0,0,0,0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAugeNJ8x2OMXi-qCBfJh0Gmu8QvPpy_9ZLyjq8RgBkNVhYRrJhxs2HWQm-hiwqD8x_fyjaCCZ9BEuGUnUiM7yCetv-w8Lr_yYqUclaDkpw57vduz_Bis5AVjPO4EFH4VD9KVEwq7tUUw4_rib0sbkmbSBt-0SXqM6pXPhNGbDmKfsb4uqMPvH6xIjHfbrDbtD_Wx6H3EPP6PJP_GBkF3L8A3aQnrhKyyCYssM9qGSTZ2rbGyaeOmVUTqvkK2QQLw_xsipbvXbFjfY')">
+<div class="relative z-10 w-full grid grid-cols-1 md:grid-cols-12 gap-0 items-stretch h-full">
+<div class="md:col-span-6 flex items-center justify-center p-12 bg-zinc-950/40 backdrop-blur-sm">
+<h2 class="text-white font-headline font-black text-6xl md:text-8xl uppercase tracking-tighter leading-tight">
+                        Smart <br/><span class="text-primary">Logistics</span>
+</h2>
+</div>
+<div class="md:col-span-6 flex flex-col justify-end p-12 md:p-24">
+<p class="text-white font-body text-2xl leading-snug font-medium mb-8">
+                        AI-driven supply chain orchestration that eliminates bottlenecks and optimizes global flow.
+                    </p>
+<div class="h-1 w-32 bg-primary"></div>
+</div>
+</div>
+</section>
+<!-- Section 6: Precision Machining -->
+<section class="parallax-section relative h-screen w-full flex items-center justify-center overflow-hidden" data-alt="close-up of a CNC milling machine carving a metallic part with cooling fluid spray and high-precision steel details" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDuw-JWLF0Pw0KgvxmvLJ-4VVBoe2NPq7SfMEPB8ixAXnop89Wq2QGWJ0zONJwZrA4F2FTZegqt7hYjdChWNfxo924Hi8FmOAB9BDaRXB69F15BHCY2IhcFMsSw_qYRA9gmKyfr3uNDZtTec5u8PWTJ37z6O4U0g4GZmqc8pQLUQKZlktv4_RWlK2aMLAIBPvHvZqb3MkI4M2maHN0A0nCKQ2dJMztn9RhiqYRIAkvTQbyJjtjFAgZWeb2ElmyAS2sO9YAGSLwsdSg')">
+<div class="relative z-10 container mx-auto px-8">
+<div class="max-w-4xl">
+<h2 class="text-white font-headline font-black text-6xl md:text-9xl uppercase tracking-tighter leading-none mb-12">
+                        Precision <br/>Machining
+                    </h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square bg-primary flex flex-col items-center justify-center text-white p-4">
+<span class="text-3xl font-black">0.001</span>
+<span class="text-[10px] uppercase font-bold tracking-widest">Tolerance</span>
+</div>
+<div class="aspect-square bg-zinc-900 flex flex-col items-center justify-center text-white p-4">
+<span class="text-3xl font-black">5-AXIS</span>
+<span class="text-[10px] uppercase font-bold tracking-widest">Control</span>
+</div>
+<div class="md:col-span-2 flex items-center p-6 bg-white/10 backdrop-blur-md">
+<p class="text-white font-body text-sm leading-relaxed">Sub-micron accuracy for the world's most demanding engineering requirements.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Energy Systems -->
+<section class="parallax-section relative h-screen w-full flex items-center justify-center overflow-hidden" data-alt="vast field of solar panels and wind turbines under a dramatic sunset sky representing clean industrial energy infrastructure" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWgb_YMbP83GAZ8B8G_S-HHWvG3E_77s1RmuOGJleTGzsvlLZJCTMKg9G4jqp3giLUYAkGJWLHsDpgVKnxlABdIJIeRG2ditg5Mk87b4rzlTNDPzoMXhJHmsgxQ3dMgfgSPZHMu5BLSiT9BGzE-0uRS1aguAAZ9PsOK2hUFr4-BRaBaJ98TfkP9VrSsMazWdBME1CcJV1i7NvWU-qDAZgv_jPJWggsZ4cVqZWfOTeLB1ryPNaeclkr02N7kIetrdEA1sqbouIiLqE')">
+<div class="relative z-10 text-center px-6">
+<h2 class="text-white font-headline font-black text-7xl md:text-9xl uppercase tracking-tighter leading-none mb-4">
+                    Energy <span class="text-primary">Systems</span>
+</h2>
+<p class="text-white font-headline font-bold text-2xl uppercase tracking-[0.5em] mb-12">Sustainable Power Grid</p>
+<div class="flex justify-center gap-8">
+<span class="material-symbols-outlined text-white text-5xl">bolt</span>
+<span class="material-symbols-outlined text-white text-5xl">settings_input_component</span>
+<span class="material-symbols-outlined text-white text-5xl">battery_charging_full</span>
+</div>
+</div>
+</section>
+<!-- Section 8: Quality Control -->
+<section class="parallax-section relative h-screen w-full flex items-center justify-center overflow-hidden" data-alt="automated quality inspection line with laser sensors scanning complex engine parts for defects in a dark industrial space" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL6JJHnzDKBDeGLp52LmycKSDkuao5uE9Gdw3RR_kqpKlEwvkh8ROkhNsUjOu8lB2CqplLgQNAPSQP0sGrk7iS6UOvzKDw8mBNojFMyOaLmD0J0r5VecX9kxP5-AR1HTiG0_65mhO8nszlEXypo3FME59RHm3TwBcHs5KHbbiFE5VNkWx-Gg9co761cT0XxIyvM-L_NV7cHhD8DsjJPk3rXT7tI_-Rg-omkHQfztg6zv1ZSnQJKQcsAqqxYTWPEKVEcP5bw_4Vu6A')">
+<div class="relative z-10 container mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="flex-1">
+<h2 class="text-white font-headline font-black text-6xl md:text-8xl uppercase tracking-tighter leading-none mb-8">
+                        Quality <br/><span class="text-primary">Control</span>
+</h2>
+</div>
+<div class="flex-1">
+<p class="text-white/80 font-body text-2xl leading-relaxed italic border-r-4 border-primary pr-12 text-right">
+                        "Zero-defect manufacturing through continuous real-time verification and rigorous stress testing protocols."
+                    </p>
+<div class="mt-12 flex justify-end">
+<button class="bg-primary text-on-primary px-10 py-5 font-headline font-black uppercase text-sm tracking-widest hover:bg-primary-container transition-all">
+                            Partner With Us
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-900 dark:bg-black w-full border-t-4 border-red-700">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0">
+<div class="text-xl font-bold text-white font-headline uppercase tracking-tight">Industrial Authority</div>
+<p class="text-zinc-500 font-['Work_Sans'] text-xs mt-2 tracking-widest uppercase">Precision Engineering Division</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="text-zinc-400 hover:text-white font-['Work_Sans'] text-sm tracking-wide transition-colors" href="#">Privacy Policy</a>
+<a class="text-zinc-400 hover:text-white font-['Work_Sans'] text-sm tracking-wide transition-colors" href="#">Terms of Service</a>
+<a class="text-zinc-400 hover:text-white font-['Work_Sans'] text-sm tracking-wide transition-colors" href="#">Compliance</a>
+<a class="text-zinc-400 hover:text-white font-['Work_Sans'] text-sm tracking-wide transition-colors" href="#">Global Offices</a>
+</div>
+<div class="text-zinc-500 font-['Work_Sans'] text-sm tracking-wide text-center md:text-right">
+                © 2024 Industrial Authority. Precision Engineering.
+            </div>
+</div>
+<div class="bg-zinc-800 py-4 px-12 text-center">
+<p class="text-zinc-500 text-[10px] uppercase tracking-[0.3em]">ISO 9001:2015 Certified | AS9100D Compliant</p>
+</div>
+</footer>
+</body></html>
