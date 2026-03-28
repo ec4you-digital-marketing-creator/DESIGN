@@ -1,10 +1,10 @@
 <div align="center">
 
-<h1 align="center">💎 Premium UI Component Library 💎</h1>
+<h1 align="center">⚡ Gideon UI Experience ⚡</h1>
 
 <p align="center">
-  <strong>A curated collection of modern, fully responsive, and high-end UI designs.</strong><br>
-  Explore the live demos by clicking on any image below!
+  <strong>Where design meets precision — premium, responsive UI components built for next-level digital experiences.</strong><br>
+  Click below to explore each live interaction.
 </p>
 
 <div align="center">
